@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@700&display=swap');
+
+body {
+    font-family: 'Varta', sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+.wrapper {
+    
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#one {
+    height: 800px;
+    background-image: url("../images/bandwebsitepic.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    height: 130px;
+    width: 90%;
+    margin-top: 40px;
+}
+
+#two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    height: 500px;
+    color: white;
+    background-color: black;
+}
+
+#player-holder {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 200px;
+    
+
+}
+
+#three {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    color: black;
+    background-color: white;
+    padding-top: 20px;
+}
+
+#video-holder {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 200px;
+    width: 100%;
+}
+
+#four {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: black;
+    color: white;
+}
+
+#five {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: white;
+    color: black;
+
+}
