@@ -44,6 +44,8 @@ a:link {
     height: 150px;
     width: 90%;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #two {
@@ -83,7 +85,6 @@ a:link {
     margin-right: auto;
     margin-bottom: 30px;
     height: 200px;
-    width: 100%;
     padding-bottom: 10px;
 }
 
@@ -138,3 +139,133 @@ footer {
     background-color: black;
     height: 300px;
 }
+
+/* nav and sidebar */
+
+.nav-main {
+    /*background-image: url(banner.png);*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    z-index: 1000;
+  }
+  
+  .btn-toggle-nav {
+    width: 70px;
+    height: 100%;
+    background-image: url("../images/whiteburger.png");
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position:center;
+    cursor: pointer;
+  }
+  
+  .btn-toggle-nav:hover {
+    opacity: 0.9;
+  }
+  
+  .nav-main ul {
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding-right: 40px;
+    padding-left: 0;
+  }
+  
+  .nav-main ul li {
+    list-style: none;
+    line-height: 50px;
+  }
+  
+  .nav-main ul li a {
+    display: flex;
+    height: 100%;
+    padding: 7 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #30b89c;
+    font-family:'Mouse Memoirs';
+    font-size: 7vw;
+    text-shadow: 2px 2px black;
+  }
+  
+  .nav-sidebar {
+    /*display: flex;*/
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: calc(100vh - 0px);
+    /*padding: 0 5px;*/
+    background-color: black;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-sidebar ul {
+    display: block;
+    height: fit-content;
+    padding-top: 50px;
+    overflow: hidden;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    text-align: center;
+  }
+  
+  .nav-sidebar ul li {
+    
+    line-height: 60px;
+    list-style:none;
+  }
+  
+  .nav-sidebar ul li span, .nav-sidebar ul li a  {
+    display: block;
+    height: 50px;
+    padding: 0 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*.nav-sidebar ul li a:hover  {
+    background-color:
+  }*/
+  
+  
+  
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  #nav-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 330px; 
+  }
+
+
+  svg {
+      padding: 10px;
+  }
+  /*end of nav & sidebar*/
