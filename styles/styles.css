@@ -291,7 +291,7 @@ footer {
     }
 
     #more-videos {
-        margin-top: 100px;
+        margin-top: 480px;
     }
 
     #five {
@@ -485,11 +485,23 @@ footer {
         margin-right: auto;
         margin-bottom: 30px;
         height: 440px;
-        width: 30%;
-        padding: 10px;
         
-    
+        padding: 10px;
     }
+
+    #pic1 {
+        width: 80%;
+    }
+
+    #pic2 {
+        width: 80%;
+    }
+
+    #pic3 {
+        width: 100%;
+        margin-right: 90px;
+    }
+
 
     #front-nav {
         display: flex;
