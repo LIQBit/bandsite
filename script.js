@@ -1,38 +1,71 @@
-let toggleNavStatus = false;
+let toggleNavStatus = false;  
+let button = document.querySelector('.btn-toggle-nav');
+let navButtons = document.getElementsByClassName('inner-link');
+let navBar = document.getElementById('mobile-nav');
+let getSidebar = document.querySelector(".nav-sidebar");
+let getSidebarUl = document.querySelector(".nav-sidebar ul");
+let getSidebarTitle = document.querySelector(".nav-sidebar span");
+let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+
 
 let toggleNav = function() {
-  let getSidebar = document.querySelector(".nav-sidebar");
-  let getSidebarUl = document.querySelector(".nav-sidebar ul");
-  let getSidebarTitle = document.querySelector(".nav-sidebar span");
-  let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
-
-  if (toggleNavStatus === false) {
+    //button.style.visibility = "hidden";
+    let newIcon = document.createElement('IMG');
+    button.style.backgroundImage = "url(images/whiteburger.png)";
+    button.setAttribute('onclick', 'hideSideBar()');
+    //newIcon.setAttribute('height', '100%');
+    document.querySelector('.close-nav').appendChild(newIcon);
     getSidebar.style.width = "100%";
+    getSidebar.style.opacity = "1";
     getSidebarTitle.style.opacity = "1";
+    
 
     let arrayLength = getSidebarLinks.length;
     for (let i = 0; i < arrayLength; i++) {
       getSidebarLinks[i].style.opacity = "1";
     }
-
+    
     getSidebarUl.style.visilbility = "visible";
+    toggleNavStatus = true; 
+  } 
+  
 
-    toggleNavStatus = true;
-  }
-
-  else if (toggleNavStatus === true) {
+const hideSideBar = function() {
+    let newIcon = document.querySelector('.close-nav');
     
+    //newIcon.style.visibility = "hidden";
+    //button.style.visibility = "visible";
+    button.style.backgroundImage = "url('images/burger.png')";
+    button.setAttribute('onclick', 'toggleNav()');
     getSidebar.style.width = "0%";
-    
     getSidebarTitle.style.opacity = "0";
-
     let arrayLength = getSidebarLinks.length;
     for (let i = 0; i < arrayLength; i++) {
       getSidebarLinks[i].style.opacity = "0";
     }
 
     getSidebarUl.style.visilbility = "hidden";
-
     toggleNavStatus = false;
-  }
 }
+
+
+
+//navButtons.addEventListener('click', hideSidebar)
+
+
+
+//navButtons.addEventListener('click', switchOff)
+
+/*if (toggleNavStatus = false) {
+  let hideSidebar = function(event){
+    toggleNavStatus = "true"
+  }
+}*/
+
+//navButtons.addEventListener('click', hideSidebar)
+
+
+
+
+
+

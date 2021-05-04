@@ -140,24 +140,34 @@ footer {
 /* nav and sidebar */
 
 .nav-main {
-    /*background-image: url(banner.png);*/
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 80px;
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:flex-start;
+    justify-content:flex-end;
+    align-content: flex-end;
     z-index: 1000;
   }
   
   .btn-toggle-nav {
     width: 70px;
     height: 100%;
-    background-image: url("../images/whiteburger.png");
+    padding-bottom: 12px;
+    background-image: url("../images/burger.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position:center;
+    cursor: pointer;
+  }
+
+  .close-nav > img {
+    width: 40px;
+    height: 100%;
+    margin-left: -60px;
     background-repeat:no-repeat;
     background-size: 50%;
     background-position:center;
@@ -252,7 +262,8 @@ footer {
   #nav-icons {
       display: flex;
       justify-content: center;
-      margin-top: 300px; 
+      margin-top: 260px; 
+      margin-left: 20px;
   }
 
 
@@ -540,159 +551,5 @@ footer {
     footer {
         height: 250px;
     }
-
-  }
-
-
-  /*@media (min-width: 1100px) {
-
-   
-
-    a:link {
-        color: black;
-        text-decoration: none;
-        padding: 350px;
-        font-size: 30px;
-      }
-      
-      a:visited {
-        text-decoration: none;
-        color: black;
-      }
-    
-    
-    
-    .wrapper {
-        
-        
-    }
-    
-    .column {
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    #one {
-        height: 800px;
-        background-image: url("../images/bandwebsitepic.png");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
-    }
-    
-    #title {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #logo {
-        height: 160px;
-        width: 40%;
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #two {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 100px;
-        height: 500px;
-        color: white;
-        background-color: black;
-    }
-
-    iframe {
-        width: 1000px;
-        height: 500px;
-    }
-    
-    #player-holder {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        height: 200px;
-    }
-    
-    #three {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-size: 25px;
-        align-items: center;
-        height: 900px;
-        color: black;
-        background-color: white;
-        padding-top: 60px;
-        padding-bottom: 20px;
-    }
-    
-    #video-holder > a {
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        height: 600px;
-        padding-bottom: 10px;
-    }
-    
-    #four {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background-color: black;
-        color: white;
-        padding-top: 30px;
-    }
-    
-    #event-holder {
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        height: 100%;
-        width: 100%;
-    }
-    
-    #five {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 600px;
-        background-color: white;
-        color: black;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    
-    }
-    
-    #merch {
-        margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        height: 400px;
-        width: 100%;
-    
-    }
-    
-    .bit-widget {
-        color: white;
-    }
-    
-    footer {
-        background-color: black;
-        height: 300px;
-    }
-
-
-
-
 
   }
