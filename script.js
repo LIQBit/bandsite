@@ -34,15 +34,11 @@ const hideSideBar = function() {
   button.setAttribute('onclick', 'toggleNav()');
   getSidebar.style.width = "0%";
   getSidebarTitle.style.opacity = "0";
-  let iconsLength = document.querySelectorAll('svg')
   let arrayLength = getSidebarLinks.length;
   for (let i = 0; i < arrayLength; i++) {
     getSidebarLinks[i].style.opacity = "0";
   }
-  for (let i = 0; i < iconsLength; i++) {
-    navIcons[i].style.opacity = '0';
-  }
-  //navIcons.style.opacity = "0";
+  navIcons.style.visilbility = "hidden";
   getSidebarUl.style.visilbility = "hidden";
 }
 
