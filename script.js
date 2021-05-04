@@ -5,6 +5,7 @@ let getSidebar = document.querySelector(".nav-sidebar");
 let getSidebarUl = document.querySelector(".nav-sidebar ul");
 let getSidebarTitle = document.querySelector(".nav-sidebar span");
 let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+let navIcons = document.querySelector('nav-icons');
 
 
 let toggleNav = function() {
@@ -33,6 +34,7 @@ const hideSideBar = function() {
   button.setAttribute('onclick', 'toggleNav()');
   getSidebar.style.width = "0%";
   getSidebarTitle.style.opacity = "0";
+  navIcons.style.opacity = "0";
   let arrayLength = getSidebarLinks.length;
   for (let i = 0; i < arrayLength; i++) {
     getSidebarLinks[i].style.opacity = "0";
