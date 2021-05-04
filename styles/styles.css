@@ -204,7 +204,6 @@ footer {
   }
   
   .nav-sidebar {
-    /*display: flex;*/
     flex-direction: column;
     position: fixed;
     justify-content: center;
@@ -215,7 +214,6 @@ footer {
     bottom: 0;
     width: 0px;
     height: calc(100vh - 0px);
-    /*padding: 0 5px;*/
     background-color: black;
     z-index: 100;
     transition: all 0.3s ease-in-out;
