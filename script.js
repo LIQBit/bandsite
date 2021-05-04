@@ -38,7 +38,7 @@ const hideSideBar = function() {
   for (let i = 0; i < arrayLength; i++) {
     getSidebarLinks[i].style.opacity = "0";
   }
-  navIcons.style.visilbility = "hidden";
+  navIcons.style.opacity = "0";
   getSidebarUl.style.visilbility = "hidden";
 }
 
