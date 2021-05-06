@@ -320,6 +320,85 @@ footer {
 
   }
 
+/* Landscape iphone 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    body {
+        font-family: 'Varta', sans-serif;
+        width: 750px;
+    }
+
+    #one {
+        height: 415px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: inherit;
+    }
+
+    #logo {
+        height: 100px; 
+        width: 45%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #more-videos {
+        margin-top: 100px;
+    }
+
+    #nav-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px; 
+        margin-left: 20px;
+    }
+
+    .nav-sidebar {
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: stretch;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        width: 0px;
+        height: calc(120vh - 0px);
+        background-color: black;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-sidebar ul {
+        display: block;
+        height: fit-content;
+        padding-top: 50px;
+        overflow: hidden;
+        visibility: visible;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40px;
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+
+
+}
+
 
 @media (min-width: 500px) {
 
