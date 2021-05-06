@@ -25,11 +25,12 @@ a:link {
 }
 
 #one {
-    height: 700px;
+    height: 209px;
     background-image: url("../images/bandwebsitepic.png");
+    background-size: 125%;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: top;
 }
 
 #title {
@@ -38,9 +39,9 @@ a:link {
 }
 
 #logo {
-    height: 150px;
-    width: 90%;
-    margin-top: 40px;
+    
+    width: 70%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,14 +51,12 @@ a:link {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 20px;
     height: 500px;
     color: white;
     background-color: black;
 }
 
 #player-holder {
-    margin-top: 10px;
     margin-bottom: 30px;
     height: 200px;
     
@@ -72,7 +71,7 @@ a:link {
     height: 400px;
     color: black;
     background-color: white;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -272,6 +271,37 @@ footer {
   /*end of nav & sidebar*/
 
 
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      
+    #one {
+        height: 370px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: inherit;
+    }
+
+    #logo {
+        height: 100px; 
+        width: 45%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #more-videos {
+        margin-top: 100px;
+    }
+
+  }
+
+
 @media (min-width: 500px) {
 
     #two {
@@ -298,9 +328,9 @@ footer {
         padding-bottom: 20px;
     }
 
-    #more-videos {
+   /* #more-videos {
         margin-top: 480px;
-    }
+    }*/
 
     #five {
         display: flex;
@@ -383,6 +413,8 @@ footer {
         background-position: center;
         cursor: pointer;
     }
+
+
 
   @media (min-width: 1000px) {
 
