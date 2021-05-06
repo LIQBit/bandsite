@@ -271,7 +271,7 @@ footer {
   /*end of nav & sidebar*/
 
 
-/* Landscape */
+/* Landscape iphone X */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -320,7 +320,27 @@ footer {
 
   }
 
-/* Landscape iphone 8 */
+/* Portrait iphone 6,7,8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #logo {
+        height: 70px; 
+        width: 45%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+
+
+/* Landscape iphone 6,7,8 */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -329,7 +349,7 @@ footer {
 
     body {
         font-family: 'Varta', sans-serif;
-        width: 750px;
+        width: 720px;
     }
 
     #one {
@@ -379,7 +399,7 @@ footer {
     .nav-sidebar ul {
         display: block;
         height: fit-content;
-        padding-top: 50px;
+        padding-top: 90px;
         overflow: hidden;
         visibility: visible;
         margin-left: auto;
@@ -387,16 +407,6 @@ footer {
         padding-right: 40px;
         text-align: center;
       }
-
-
-
-
-
-
-
-
-
-
 }
 
 
