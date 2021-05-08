@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Varta', sans-serif;
+    width: fit-content;
 }
 
 a:link {
@@ -353,7 +354,7 @@ footer {
 
     body {
         font-family: 'Varta', sans-serif;
-        width: 710px;
+        width: fit-content;
     }
 
     #one {
