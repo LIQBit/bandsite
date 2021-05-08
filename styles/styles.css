@@ -314,7 +314,7 @@ footer {
     .nav-sidebar ul {
         display: block;
         height: fit-content;
-        padding-top: 80px;
+        padding-top: 100px;
         overflow: hidden;
         visibility: visible;
         margin-left: auto;
